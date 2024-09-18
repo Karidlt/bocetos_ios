@@ -16,6 +16,8 @@
 		FB6A46112C9B2B6A0064C5AF /* boceto_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A46102C9B2B6A0064C5AF /* boceto_1Tests.swift */; };
 		FB6A461B2C9B2B6A0064C5AF /* boceto_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A461A2C9B2B6A0064C5AF /* boceto_1UITests.swift */; };
 		FB6A461D2C9B2B6A0064C5AF /* boceto_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A461C2C9B2B6A0064C5AF /* boceto_1UITestsLaunchTests.swift */; };
+		FB6A462E2C9B36450064C5AF /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A462D2C9B36450064C5AF /* Cita.swift */; };
+		FB6A46302C9B36E30064C5AF /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A462F2C9B36E30064C5AF /* generador_de_citas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		FB6A46162C9B2B6A0064C5AF /* boceto_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boceto_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6A461A2C9B2B6A0064C5AF /* boceto_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITests.swift; sourceTree = "<group>"; };
 		FB6A461C2C9B2B6A0064C5AF /* boceto_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB6A462D2C9B36450064C5AF /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
+		FB6A462F2C9B36E30064C5AF /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		FB6A45F82C9B2B690064C5AF /* boceto_1 */ = {
 			isa = PBXGroup;
 			children = (
+				FB6A462C2C9B36240064C5AF /* controlador */,
+				FB6A46292C9B357E0064C5AF /* modelo */,
 				FB6A45F92C9B2B690064C5AF /* AppDelegate.swift */,
 				FB6A45FB2C9B2B690064C5AF /* SceneDelegate.swift */,
 				FB6A45FD2C9B2B690064C5AF /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				FB6A461C2C9B2B6A0064C5AF /* boceto_1UITestsLaunchTests.swift */,
 			);
 			path = boceto_1UITests;
+			sourceTree = "<group>";
+		};
+		FB6A46292C9B357E0064C5AF /* modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FB6A462D2C9B36450064C5AF /* Cita.swift */,
+			);
+			path = modelo;
+			sourceTree = "<group>";
+		};
+		FB6A462C2C9B36240064C5AF /* controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FB6A462F2C9B36E30064C5AF /* generador_de_citas.swift */,
+			);
+			path = controlador;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6A45FE2C9B2B690064C5AF /* ViewController.swift in Sources */,
+				FB6A462E2C9B36450064C5AF /* Cita.swift in Sources */,
+				FB6A46302C9B36E30064C5AF /* generador_de_citas.swift in Sources */,
 				FB6A45FA2C9B2B690064C5AF /* AppDelegate.swift in Sources */,
 				FB6A45FC2C9B2B690064C5AF /* SceneDelegate.swift in Sources */,
 			);
