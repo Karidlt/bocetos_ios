@@ -80,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB5AD0732C9DD9E7006C9E4A /* controlador_de_vistas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controlador_de_vistas;
+			sourceTree = "<group>";
+		};
 		FB6A45ED2C9B2B690064C5AF = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +110,7 @@
 		FB6A45F82C9B2B690064C5AF /* boceto_1 */ = {
 			isa = PBXGroup;
 			children = (
+				FB5AD0732C9DD9E7006C9E4A /* controlador_de_vistas */,
 				FB6A462C2C9B36240064C5AF /* controlador */,
 				FB6A46292C9B357E0064C5AF /* modelo */,
 				FB6A45F92C9B2B690064C5AF /* AppDelegate.swift */,
