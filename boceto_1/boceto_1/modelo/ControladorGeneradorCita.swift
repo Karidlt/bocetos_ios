@@ -17,6 +17,7 @@ class ControladorGeneradorCita: UIViewController{
     @IBOutlet weak var quien_lo_dijo_view: UITextField!
     
     @IBOutlet weak var que_es_lo_que_dijo: UITextField!
+   
     
     
     @IBAction func agregar_cita_nueva(_ sender: UIButton) {

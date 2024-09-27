@@ -112,12 +112,12 @@
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhN-gT-eSS">
-                                <rect key="frame" x="34" y="57" width="75" height="35"/>
+                                <rect key="frame" x="35" y="57" width="73" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="INICIO"/>
                                 <connections>
                                     <segue destination="oLd-Ll-hwN" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="cPB-LP-Vrp"/>
                                 </connections>
@@ -231,7 +231,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="Vqd-gw-ZBi" kind="show" id="NVm-iU-bmT"/>
+                                            <segue destination="Vqd-gw-ZBi" kind="show" id="sxe-Sh-7jg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -340,12 +340,12 @@
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ti-GW-yG1">
-                                <rect key="frame" x="40" y="101" width="75" height="35"/>
+                                <rect key="frame" x="41" y="101" width="73" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="INICIO"/>
                                 <connections>
                                     <segue destination="F4m-QK-CCU" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="qQR-DS-Geq"/>
                                 </connections>
@@ -450,6 +450,7 @@
                     <navigationItem key="navigationItem" id="EG7-it-AKw"/>
                     <connections>
                         <outlet property="que_dijo" destination="gCS-VM-Hj6" id="wNr-qb-kyb"/>
+                        <outlet property="que_es_lo_que_dijo" destination="gCS-VM-Hj6" id="a8U-3Y-lCj"/>
                         <outlet property="quien_lo_dijo_view" destination="MY0-AA-O59" id="n4v-5C-4Cd"/>
                     </connections>
                 </viewController>
