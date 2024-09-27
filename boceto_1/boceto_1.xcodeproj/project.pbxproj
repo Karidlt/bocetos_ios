@@ -19,6 +19,7 @@
 		FB6A462E2C9B36450064C5AF /* Cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A462D2C9B36450064C5AF /* Cita.swift */; };
 		FB6A46302C9B36E30064C5AF /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A462F2C9B36E30064C5AF /* generador_de_citas.swift */; };
 		FB6F60AB2CA4600B00B50CAB /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6F60AA2CA4600B00B50CAB /* ControladorPantallaCitas.swift */; };
+		FBF906F32CA70E76001B253F /* ControladorGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF906F22CA70E76001B253F /* ControladorGeneradorCita.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FB6A462D2C9B36450064C5AF /* Cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cita.swift; sourceTree = "<group>"; };
 		FB6A462F2C9B36E30064C5AF /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
 		FB6F60AA2CA4600B00B50CAB /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ControladorPantallaCitas.swift; path = boceto_1/controlador/ControladorPantallaCitas.swift; sourceTree = SOURCE_ROOT; };
+		FBF906F22CA70E76001B253F /* ControladorGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ControladorGeneradorCita.swift; path = boceto_1/modelo/ControladorGeneradorCita.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6F60AA2CA4600B00B50CAB /* ControladorPantallaCitas.swift */,
+				FBF906F22CA70E76001B253F /* ControladorGeneradorCita.swift */,
 			);
 			path = controlador_de_vistas;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				FB6A45FE2C9B2B690064C5AF /* ViewController.swift in Sources */,
 				FB6A462E2C9B36450064C5AF /* Cita.swift in Sources */,
 				FB6F60AB2CA4600B00B50CAB /* ControladorPantallaCitas.swift in Sources */,
+				FBF906F32CA70E76001B253F /* ControladorGeneradorCita.swift in Sources */,
 				FB6A46302C9B36E30064C5AF /* generador_de_citas.swift in Sources */,
 				FB6A45FA2C9B2B690064C5AF /* AppDelegate.swift in Sources */,
 				FB6A45FC2C9B2B690064C5AF /* SceneDelegate.swift in Sources */,
