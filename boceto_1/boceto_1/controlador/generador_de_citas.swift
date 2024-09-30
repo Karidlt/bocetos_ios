@@ -25,7 +25,7 @@ class GeneradorDeCitas{
     
     
     func generar_citas_falsas(){
-        self.agregar_cita_manual("En las sombras, donde la oscuridad es mi única compañera, guardo un secreto explosivo. Un poder que podría cambiar el mundo, si tan solo tuviera el valor de liberarlo",
+        self.agregar_cita_manual("BOOOOOOOOOHHHH",
                      quien_lo_dijo: "Fantasma amarillo"
         )
         
