@@ -26,7 +26,7 @@ class GeneradorDeCitas{
     
     func generar_citas_falsas(){
         self.agregar_cita_manual("BOOOOOOOOOHHHH",
-                     quien_lo_dijo: "Fantasma amarillo"
+                     quien_lo_dijo: "Fantasma"
         )
         
         self.agregar_cita_manual("¡La vida es corta, ¡explota al máximo!",
@@ -37,7 +37,7 @@ class GeneradorDeCitas{
                           quien_lo_dijo: "Zombie"
         )
         
-        self.agregar_cita_manual("Solia ser un explorador como tu... Pero me dieron con una flecha en la rodilla",
+        self.agregar_cita_manual("con un vacito de leche",
                           quien_lo_dijo: "Pancito"
         )
     }
