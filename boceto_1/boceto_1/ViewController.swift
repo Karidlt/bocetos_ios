@@ -50,15 +50,46 @@ class ViewController: UIViewController {
         
         if let pantalla_agregar_citas = segue.source as?
             ControladorGeneradorCita{
-            citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+            if (pantalla_agregar_citas.cita_creada != nil){
+                citas_disponibles.agregar_cita (pantalla_agregar_citas.cita_creada!)
+            }
+            else
+            {
+                print ("No se agrego nada" )
+            }
+             
         }
-
-        
         
         actualizar_cantidad()
+        
+        
+        /*  @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue) {
+         if let pantalla_agregar_citas = segue.source as?
+         ControladorGeneradorCita {
+         // Solo agregar la cita si no es nil
+         
+         
+         if let nuevaCita = pantalla_agregar_citas.cita_creada {             citas_disponibles.agregar_cita(nuevaCita)            //actualizar_cantidad()
+         // Actualizar contador solo si se agregó una cita válida
+         
+         actualizar_cantidad()
+         
+         }
+         }
+         }*/
+        
+        //---------------
     }
-    
-    //---------------
-    
 
 }
+
+
+/*    @IBAction func volver_a_pantalla_inicio(segue: UIStoryboardSegue){
+ 
+ if let pantalla_agregar_citas = segue.source as?
+     ControladorGeneradorCita{
+     
+     citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+ }
+actualizar_cantidad()
+*/

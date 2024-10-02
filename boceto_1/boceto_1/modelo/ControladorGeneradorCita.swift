@@ -21,13 +21,21 @@ class ControladorGeneradorCita: UIViewController{
    
     
     
-    @IBAction func agregar_cita_nueva(_ sender: UIButton) {
-        
-           cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!, que_dijo: que_es_lo_que_dijo.text!)
+    @IBAction func agregar_cita_nueva(_ sender: UIButton)
+    {
+        //comprara si si se agrego algo en los campos de texto de  quie lo dijo y que dijo, si son diferentes a "" osea vacio entonces lo guarda como cita creada
+        if( quien_lo_dijo_view.text != "" && que_es_lo_que_dijo.text != "" )
+            
+        {
+            cita_creada = Cita(quien_lo_dijo: quien_lo_dijo_view.text!, que_dijo: que_es_lo_que_dijo.text!)
             
         }
-
-    
+        //en caso de que sean vacios imprime que no hay nada
+        else{
+            print ("No hay nada")
+        }
+    }
+        
     
     override func viewDidLoad()
         {
