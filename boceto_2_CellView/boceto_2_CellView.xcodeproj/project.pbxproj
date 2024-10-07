@@ -16,6 +16,7 @@
 		FB6A99452CB4339E00DF6687 /* boceto_2_CellViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A99442CB4339E00DF6687 /* boceto_2_CellViewUITests.swift */; };
 		FB6A99472CB4339E00DF6687 /* boceto_2_CellViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A99462CB4339E00DF6687 /* boceto_2_CellViewUITestsLaunchTests.swift */; };
 		FB6A99562CB4376000DF6687 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A99552CB4376000DF6687 /* ControladorPantallaPrincipalDeColeccion.swift */; };
+		FB6A99582CB43D3500DF6687 /* VistaDeCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6A99572CB43D3500DF6687 /* VistaDeCelda.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FB6A99442CB4339E00DF6687 /* boceto_2_CellViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITests.swift; sourceTree = "<group>"; };
 		FB6A99462CB4339E00DF6687 /* boceto_2_CellViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_2_CellViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB6A99552CB4376000DF6687 /* ControladorPantallaPrincipalDeColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDeColeccion.swift; sourceTree = "<group>"; };
+		FB6A99572CB43D3500DF6687 /* VistaDeCelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeCelda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6A99552CB4376000DF6687 /* ControladorPantallaPrincipalDeColeccion.swift */,
+				FB6A99572CB43D3500DF6687 /* VistaDeCelda.swift */,
 			);
 			path = vista_de_celdas;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				FB6A99242CB4339E00DF6687 /* AppDelegate.swift in Sources */,
 				FB6A99262CB4339E00DF6687 /* SceneDelegate.swift in Sources */,
 				FB6A99562CB4376000DF6687 /* ControladorPantallaPrincipalDeColeccion.swift in Sources */,
+				FB6A99582CB43D3500DF6687 /* VistaDeCelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

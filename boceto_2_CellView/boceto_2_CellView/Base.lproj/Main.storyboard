@@ -33,20 +33,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Eic-Wf-Xrm">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="199" height="182"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="xO8-3y-WSH">
-                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celda_pantalla_principal" id="xO8-3y-WSH" customClass="VistaDeCelda" customModule="boceto_2_CellView" customModuleProvider="target">
+                                <rect key="frame" x="97" y="0.0" width="199" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pq1-TL-Id3">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="199" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaL-q9-wMc">
+                                            <rect key="frame" x="0.0" y="0.0" width="199" height="182"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gaL-q9-wMc" secondAttribute="trailing" id="7PN-Nk-4d0"/>
+                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="top" secondItem="pq1-TL-Id3" secondAttribute="top" id="C1o-sW-AhF"/>
+                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="leading" secondItem="pq1-TL-Id3" secondAttribute="leading" id="RQg-Xc-TQY"/>
+                                        <constraint firstAttribute="bottom" secondItem="gaL-q9-wMc" secondAttribute="bottom" id="rej-bj-adR"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <size key="customSize" width="199" height="182"/>
+                                <connections>
+                                    <outlet property="etiqueta" destination="gaL-q9-wMc" id="FGt-fF-k36"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -58,7 +76,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JB4-Hu-hIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="531" y="-54"/>
+            <point key="canvasLocation" x="530.53435114503816" y="-54.225352112676056"/>
         </scene>
     </scenes>
     <resources>

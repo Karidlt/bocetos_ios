@@ -37,7 +37,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
 
 
@@ -46,13 +46,21 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController {
         return 6
     }
 
+    //Funcion para identificar y crear cada una de las celdas creadas en el Controller
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
+        let celda: VistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeCelda
     
         // Configure the cell
-        celda.backgroundColor = UIColor.green
+        //celda.backgroundColor = UIColor.green
+        
+        celda.etiqueta.text = "\(indexPath)"
     
         return celda
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Se selecciono la celda \(indexPath)")
+
     }
 
     // MARK: UICollectionViewDelegate
