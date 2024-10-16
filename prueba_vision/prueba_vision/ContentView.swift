@@ -10,19 +10,32 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    @State var pulsaciones: Bool = true
+    
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-            Text("Hello, world!")
-            Button(action: {print("hola mundo desde consola")}, label: {Text("Hola mundo")})
-        }
+        HStack{
+            VStack {
+                if pulsaciones{
+                    Model3D(named: "Scene", bundle: realityKitContentBundle)
+                        .padding(.bottom, 50)
+                }
+            }
+                    Text("Hello, world!")
+                    Text("Hello, world! \(pulsaciones)")
+                
+            Text ("hELLO wORLD")
+        
+             
+            Button(action: {pulsaciones = !pulsaciones
+                print ("Hola mundo desde consola \(pulsaciones)")
+            }, label: {
+                Text(" hola mundo")
+        })
         .padding()
-    }
-}
-
+                   }
+                   }}
+                   
 #Preview(windowStyle: .automatic) {
     ContentView()
 }
+
