@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,9 +47,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="199" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-lN-shm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRd-lN-shm">
                                             <rect key="frame" x="78" y="153" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -61,10 +61,10 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="gaL-q9-wMc" secondAttribute="trailing" id="7PN-Nk-4d0"/>
-                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="top" secondItem="pq1-TL-Id3" secondAttribute="top" id="C1o-sW-AhF"/>
-                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="leading" secondItem="pq1-TL-Id3" secondAttribute="leading" id="RQg-Xc-TQY"/>
-                                        <constraint firstAttribute="bottom" secondItem="gaL-q9-wMc" secondAttribute="bottom" id="rej-bj-adR"/>
+                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="top" secondItem="pq1-TL-Id3" secondAttribute="top" constant="8" id="ATt-Hz-pHt"/>
+                                        <constraint firstItem="bRd-lN-shm" firstAttribute="centerX" secondItem="pq1-TL-Id3" secondAttribute="centerX" id="LOm-V1-AQ7"/>
+                                        <constraint firstItem="bRd-lN-shm" firstAttribute="centerY" secondItem="pq1-TL-Id3" secondAttribute="centerY" id="SQF-3H-Lqw"/>
+                                        <constraint firstItem="gaL-q9-wMc" firstAttribute="centerX" secondItem="pq1-TL-Id3" secondAttribute="centerX" id="z8N-Tc-Ytw"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -86,10 +86,28 @@
             </objects>
             <point key="canvasLocation" x="530.53435114503816" y="-54.225352112676056"/>
         </scene>
+        <!--Controlador Pantalla Del Post-->
+        <scene sceneID="Rnp-IP-g5c">
+            <objects>
+                <viewController storyboardIdentifier="PantallaPublicacion" id="9Fz-dL-rvi" customClass="ControladorPantallaDelPost" customModule="boceto_2_CellView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6J7-n2-ytj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CBZ-Br-Jke"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee9-HH-9Kt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="-54"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -13,7 +13,7 @@ extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
         var ancho = self.collectionView.frame.width
         var largo = self.collectionView.frame.height
         
-        ancho = ancho / 3.5
+        ancho = ancho / 1
         largo = ancho * 0.5
         
         return CGSize(width: ancho, height: largo)
@@ -34,7 +34,7 @@ extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         var ancho = self.collectionView.frame.width
-        ancho = ancho / 3.5
+        ancho = ancho / 0.5
         
         return ancho
     }

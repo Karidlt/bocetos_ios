@@ -59,19 +59,6 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     }
     
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -105,9 +92,12 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
+        //pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
+        
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
-        print(self.navigationController)
+       // print(self.navigationController)
 
     }
 
