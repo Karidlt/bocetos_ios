@@ -14,6 +14,7 @@ import UIKit
 
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     private var lista_de_publicaciones: [Publicacion] = []
+    
     let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
 
     
