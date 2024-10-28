@@ -18,9 +18,12 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
     
+    
     @IBOutlet weak var seccion_comentarios: UICollectionView!
     
     public var id_publicacion: Int?
+    
+ //   private var comentario: Comentario?
     
     private var publicacion: Publicacion?
     private var usuario: Usuario?
@@ -93,12 +96,13 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         
         }
 
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return lista_comentarios.count
         }
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            print("Aqui denberia hacer algo")
+            print("Aqui deberia hacer algo")
             let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
         
             // Configure the cell

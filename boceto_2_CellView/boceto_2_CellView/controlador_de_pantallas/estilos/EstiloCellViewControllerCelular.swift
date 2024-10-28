@@ -13,7 +13,7 @@ extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowL
         var ancho = self.collectionView.frame.width
         var largo = self.collectionView.frame.height
         
-        ancho = ancho / 1
+        ancho = ancho / 1.1
         largo = ancho * 0.5
         
         return CGSize(width: ancho, height: largo)
