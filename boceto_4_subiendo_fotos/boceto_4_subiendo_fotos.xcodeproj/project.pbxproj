@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA6D9712CD2849700048483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9702CD2849700048483 /* AppDelegate.swift */; };
+		FBA6D9732CD2849700048483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9722CD2849700048483 /* SceneDelegate.swift */; };
+		FBA6D9752CD2849700048483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9742CD2849700048483 /* ViewController.swift */; };
+		FBA6D9782CD2849700048483 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBA6D9772CD2849700048483 /* Base */; };
+		FBA6D97A2CD2849700048483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA6D9792CD2849700048483 /* Assets.xcassets */; };
+		FBA6D97D2CD2849700048483 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBA6D97C2CD2849700048483 /* Base */; };
+		FBA6D9882CD2849700048483 /* boceto_4_subiendo_fotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9872CD2849700048483 /* boceto_4_subiendo_fotosTests.swift */; };
+		FBA6D9922CD2849700048483 /* boceto_4_subiendo_fotosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9912CD2849700048483 /* boceto_4_subiendo_fotosUITests.swift */; };
+		FBA6D9942CD2849700048483 /* boceto_4_subiendo_fotosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6D9932CD2849700048483 /* boceto_4_subiendo_fotosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA6D9842CD2849700048483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA6D9652CD2849700048483 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA6D96C2CD2849700048483;
+			remoteInfo = boceto_4_subiendo_fotos;
+		};
+		FBA6D98E2CD2849700048483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA6D9652CD2849700048483 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA6D96C2CD2849700048483;
+			remoteInfo = boceto_4_subiendo_fotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBA6D96D2CD2849700048483 /* boceto_4_subiendo_fotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_4_subiendo_fotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA6D9702CD2849700048483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBA6D9722CD2849700048483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FBA6D9742CD2849700048483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBA6D9772CD2849700048483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBA6D9792CD2849700048483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBA6D97C2CD2849700048483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBA6D97E2CD2849700048483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA6D9832CD2849700048483 /* boceto_4_subiendo_fotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boceto_4_subiendo_fotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA6D9872CD2849700048483 /* boceto_4_subiendo_fotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_4_subiendo_fotosTests.swift; sourceTree = "<group>"; };
+		FBA6D98D2CD2849700048483 /* boceto_4_subiendo_fotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boceto_4_subiendo_fotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA6D9912CD2849700048483 /* boceto_4_subiendo_fotosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_4_subiendo_fotosUITests.swift; sourceTree = "<group>"; };
+		FBA6D9932CD2849700048483 /* boceto_4_subiendo_fotosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boceto_4_subiendo_fotosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA6D96A2CD2849700048483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D9802CD2849700048483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D98A2CD2849700048483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA6D9642CD2849700048483 = {
+			isa = PBXGroup;
+			children = (
+				FBA6D96F2CD2849700048483 /* boceto_4_subiendo_fotos */,
+				FBA6D9862CD2849700048483 /* boceto_4_subiendo_fotosTests */,
+				FBA6D9902CD2849700048483 /* boceto_4_subiendo_fotosUITests */,
+				FBA6D96E2CD2849700048483 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA6D96E2CD2849700048483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6D96D2CD2849700048483 /* boceto_4_subiendo_fotos.app */,
+				FBA6D9832CD2849700048483 /* boceto_4_subiendo_fotosTests.xctest */,
+				FBA6D98D2CD2849700048483 /* boceto_4_subiendo_fotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA6D96F2CD2849700048483 /* boceto_4_subiendo_fotos */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6D9702CD2849700048483 /* AppDelegate.swift */,
+				FBA6D9722CD2849700048483 /* SceneDelegate.swift */,
+				FBA6D9742CD2849700048483 /* ViewController.swift */,
+				FBA6D9762CD2849700048483 /* Main.storyboard */,
+				FBA6D9792CD2849700048483 /* Assets.xcassets */,
+				FBA6D97B2CD2849700048483 /* LaunchScreen.storyboard */,
+				FBA6D97E2CD2849700048483 /* Info.plist */,
+			);
+			path = boceto_4_subiendo_fotos;
+			sourceTree = "<group>";
+		};
+		FBA6D9862CD2849700048483 /* boceto_4_subiendo_fotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6D9872CD2849700048483 /* boceto_4_subiendo_fotosTests.swift */,
+			);
+			path = boceto_4_subiendo_fotosTests;
+			sourceTree = "<group>";
+		};
+		FBA6D9902CD2849700048483 /* boceto_4_subiendo_fotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA6D9912CD2849700048483 /* boceto_4_subiendo_fotosUITests.swift */,
+				FBA6D9932CD2849700048483 /* boceto_4_subiendo_fotosUITestsLaunchTests.swift */,
+			);
+			path = boceto_4_subiendo_fotosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA6D96C2CD2849700048483 /* boceto_4_subiendo_fotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA6D9972CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotos" */;
+			buildPhases = (
+				FBA6D9692CD2849700048483 /* Sources */,
+				FBA6D96A2CD2849700048483 /* Frameworks */,
+				FBA6D96B2CD2849700048483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boceto_4_subiendo_fotos;
+			productName = boceto_4_subiendo_fotos;
+			productReference = FBA6D96D2CD2849700048483 /* boceto_4_subiendo_fotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA6D9822CD2849700048483 /* boceto_4_subiendo_fotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA6D99A2CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotosTests" */;
+			buildPhases = (
+				FBA6D97F2CD2849700048483 /* Sources */,
+				FBA6D9802CD2849700048483 /* Frameworks */,
+				FBA6D9812CD2849700048483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA6D9852CD2849700048483 /* PBXTargetDependency */,
+			);
+			name = boceto_4_subiendo_fotosTests;
+			productName = boceto_4_subiendo_fotosTests;
+			productReference = FBA6D9832CD2849700048483 /* boceto_4_subiendo_fotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBA6D98C2CD2849700048483 /* boceto_4_subiendo_fotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA6D99D2CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotosUITests" */;
+			buildPhases = (
+				FBA6D9892CD2849700048483 /* Sources */,
+				FBA6D98A2CD2849700048483 /* Frameworks */,
+				FBA6D98B2CD2849700048483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA6D98F2CD2849700048483 /* PBXTargetDependency */,
+			);
+			name = boceto_4_subiendo_fotosUITests;
+			productName = boceto_4_subiendo_fotosUITests;
+			productReference = FBA6D98D2CD2849700048483 /* boceto_4_subiendo_fotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA6D9652CD2849700048483 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FBA6D96C2CD2849700048483 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FBA6D9822CD2849700048483 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FBA6D96C2CD2849700048483;
+					};
+					FBA6D98C2CD2849700048483 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FBA6D96C2CD2849700048483;
+					};
+				};
+			};
+			buildConfigurationList = FBA6D9682CD2849700048483 /* Build configuration list for PBXProject "boceto_4_subiendo_fotos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA6D9642CD2849700048483;
+			productRefGroup = FBA6D96E2CD2849700048483 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA6D96C2CD2849700048483 /* boceto_4_subiendo_fotos */,
+				FBA6D9822CD2849700048483 /* boceto_4_subiendo_fotosTests */,
+				FBA6D98C2CD2849700048483 /* boceto_4_subiendo_fotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA6D96B2CD2849700048483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA6D97A2CD2849700048483 /* Assets.xcassets in Resources */,
+				FBA6D97D2CD2849700048483 /* Base in Resources */,
+				FBA6D9782CD2849700048483 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D9812CD2849700048483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D98B2CD2849700048483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA6D9692CD2849700048483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA6D9752CD2849700048483 /* ViewController.swift in Sources */,
+				FBA6D9712CD2849700048483 /* AppDelegate.swift in Sources */,
+				FBA6D9732CD2849700048483 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D97F2CD2849700048483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA6D9882CD2849700048483 /* boceto_4_subiendo_fotosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA6D9892CD2849700048483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA6D9942CD2849700048483 /* boceto_4_subiendo_fotosUITestsLaunchTests.swift in Sources */,
+				FBA6D9922CD2849700048483 /* boceto_4_subiendo_fotosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA6D9852CD2849700048483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA6D96C2CD2849700048483 /* boceto_4_subiendo_fotos */;
+			targetProxy = FBA6D9842CD2849700048483 /* PBXContainerItemProxy */;
+		};
+		FBA6D98F2CD2849700048483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA6D96C2CD2849700048483 /* boceto_4_subiendo_fotos */;
+			targetProxy = FBA6D98E2CD2849700048483 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA6D9762CD2849700048483 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA6D9772CD2849700048483 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBA6D97B2CD2849700048483 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA6D97C2CD2849700048483 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA6D9952CD2849700048483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBA6D9962CD2849700048483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA6D9982CD2849700048483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = boceto_4_subiendo_fotos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBA6D9992CD2849700048483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = boceto_4_subiendo_fotos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBA6D99B2CD2849700048483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boceto_4_subiendo_fotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/boceto_4_subiendo_fotos";
+			};
+			name = Debug;
+		};
+		FBA6D99C2CD2849700048483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boceto_4_subiendo_fotos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/boceto_4_subiendo_fotos";
+			};
+			name = Release;
+		};
+		FBA6D99E2CD2849700048483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = boceto_4_subiendo_fotos;
+			};
+			name = Debug;
+		};
+		FBA6D99F2CD2849700048483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uacj.mx.boceto-4-subiendo-fotosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = boceto_4_subiendo_fotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA6D9682CD2849700048483 /* Build configuration list for PBXProject "boceto_4_subiendo_fotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA6D9952CD2849700048483 /* Debug */,
+				FBA6D9962CD2849700048483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA6D9972CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA6D9982CD2849700048483 /* Debug */,
+				FBA6D9992CD2849700048483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA6D99A2CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA6D99B2CD2849700048483 /* Debug */,
+				FBA6D99C2CD2849700048483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA6D99D2CD2849700048483 /* Build configuration list for PBXNativeTarget "boceto_4_subiendo_fotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA6D99E2CD2849700048483 /* Debug */,
+				FBA6D99F2CD2849700048483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA6D9652CD2849700048483 /* Project object */;
+}
