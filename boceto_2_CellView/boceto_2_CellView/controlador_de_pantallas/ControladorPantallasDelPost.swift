@@ -18,6 +18,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
     
+  
     
     @IBOutlet weak var seccion_comentarios: UICollectionView!
     
@@ -103,8 +104,11 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             print("Aqui deberia hacer algo")
-            let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
-        
+            let celda : VistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeCelda
+            
+            celda.body = self .lista_comentarios
+            [indexPath.item].body
+            
             // Configure the cell
             celda.tintColor = UIColor.green
       

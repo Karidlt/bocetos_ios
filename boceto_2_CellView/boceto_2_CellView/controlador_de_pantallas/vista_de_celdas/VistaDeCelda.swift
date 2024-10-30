@@ -12,4 +12,7 @@ class VistaDeCelda: UICollectionViewCell {
     @IBOutlet weak var titulo: UILabel!
    
     @IBOutlet weak var cuerpo: UILabel!
+    
+    @IBOutlet weak var comentario_usuario: UILabel!
+    
 }
