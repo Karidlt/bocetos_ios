@@ -13,6 +13,9 @@ class VistaDeCelda: UICollectionViewCell {
    
     @IBOutlet weak var cuerpo: UILabel!
     
-    @IBOutlet weak var comentario_usuario: UILabel!
+ 
     
+    @IBOutlet weak var name_comentario: UILabel!
+    @IBOutlet weak var correo_comentario: UILabel!
+    @IBOutlet weak var cuerpo_comentario: UILabel!
 }

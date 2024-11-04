@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
+class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     private let identificador_de_celda = "CeldaComentario"
    
     
@@ -42,6 +42,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
         controlador_de_navegacion?.activar_navigation_bar(actviar: true)
         
         seccion_comentarios.dataSource = self
+        seccion_comentarios.delegate = self
         
         realizar_descarga_de_informacion()
     }
@@ -102,24 +103,30 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource {
             return lista_comentarios.count
         }
         
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            print("Aqui deberia hacer algo")
-            let celda : VistaDeCelda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeCelda
-            
-            celda.body = self .lista_comentarios
-            [indexPath.item].body
-            
-            // Configure the cell
-            celda.tintColor = UIColor.green
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
       
-            // print(self.lista_de_publicaciones)
-            
-            return celda
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath) as! VistaDeCelda
+
+      
+        let comentario = lista_comentarios[indexPath.item]
+        
+                celda.name_comentario.text = comentario.name
+        celda.cuerpo_comentario.text = comentario.body
+        celda.correo_comentario.text = comentario.email
+
+        return celda
         }
         
 
-    
-    
+    /*// Método para establecer el tamaño de las celdas
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // Aquí puedes ajustar el tamaño de la celda según sea necesario
+        let ancho = collectionView.frame.width - 20 // Margen horizontal
+        let alto: CGFloat = 100 // Altura fija o ajustada según el contenido
+        return CGSize(width: ancho, height: alto)
+    }
+
+    */
     
     /*
     // MARK: - Navigation
