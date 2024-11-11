@@ -11,6 +11,16 @@ import UIKit
 class CountryDetailViewController: UIViewController {
     var country: Pais?
  
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var moneda_pais: UILabel!
+    @IBOutlet weak var idioma_pais: UILabel!
+    @IBOutlet weak var capitalLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var flag: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -33,7 +43,7 @@ class CountryDetailViewController: UIViewController {
  
         // Población del país
         let populationLabel = UILabel()
-        populationLabel.text = "Población: \(country.population)"
+        capitalLabel.text = "Población: \(country.population)"
         populationLabel.translatesAutoresizingMaskIntoConstraints = false
  
         // Bandera del país

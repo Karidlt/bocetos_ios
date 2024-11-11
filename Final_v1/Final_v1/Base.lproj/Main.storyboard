@@ -32,6 +32,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57k-EQ-7oR">
                                 <rect key="frame" x="0.0" y="539" width="393" height="279"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dBe-b0-eQn"/>
@@ -133,10 +134,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bkJ-mx-hCj"/>
+                    <connections>
+                        <outlet property="capitalLabel" destination="KiZ-ei-AY4" id="hFV-lN-9dh"/>
+                        <outlet property="capital_pais" destination="EBv-et-hXu" id="wMx-Jh-RPL"/>
+                        <outlet property="flag" destination="us2-kF-oG8" id="GrE-df-bq3"/>
+                        <outlet property="idioma_pais" destination="gp2-62-qan" id="GgL-2U-Vaw"/>
+                        <outlet property="moneda_pais" destination="Iyi-Ii-CBX" id="0oS-m3-Okt"/>
+                        <outlet property="nameLabel" destination="5aL-XB-zXs" id="7Qe-zR-mST"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYu-Ni-86S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2327" y="57"/>
+            <point key="canvasLocation" x="2325.9541984732823" y="56.338028169014088"/>
         </scene>
         <!--Controlador paises-->
         <scene sceneID="T52-HX-Usa">
