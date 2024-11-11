@@ -112,6 +112,7 @@
 				FBC7EC1A2CDE7252001AB201 /* controlador_pantallas */,
 				FBC7EC172CDE713B001AB201 /* provedor */,
 				FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */,
+				FBC7EC182CDE715B001AB201 /* provedor_api_paises.swift */,
 				FBC7EBE72CDE6E42001AB201 /* SceneDelegate.swift */,
 				FBC7EBEB2CDE6E42001AB201 /* Main.storyboard */,
 				FBC7EBEE2CDE6E43001AB201 /* Assets.xcassets */,
@@ -143,7 +144,6 @@
 		FBC7EC172CDE713B001AB201 /* provedor */ = {
 			isa = PBXGroup;
 			children = (
-				FBC7EC182CDE715B001AB201 /* provedor_api_paises.swift */,
 			);
 			path = provedor;
 			sourceTree = "<group>";

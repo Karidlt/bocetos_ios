@@ -1,8 +1,8 @@
 //
 //  controlador_paises.swift
-//  Final_v1
+//  Final_v2
 //
-//  Created by alumno on 08-11-24.
+//  Created by alumno on 11-11-24.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import UIKit
 class Controlador_paises: UITableViewController {
     var region: String?
     var paises = [Pais]()
-    let apiService = APIService()
+  //  let apiService = APIService()
  
     override func viewDidLoad() {
         super.viewDidLoad()
