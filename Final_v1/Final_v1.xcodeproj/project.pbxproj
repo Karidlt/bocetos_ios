@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBBDDAB22CE519FD002838AB /* controlador_idiomas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */; };
 		FBC7EBE62CDE6E42001AB201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */; };
 		FBC7EBE82CDE6E42001AB201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7EBE72CDE6E42001AB201 /* SceneDelegate.swift */; };
 		FBC7EBED2CDE6E42001AB201 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FBC7EBEC2CDE6E42001AB201 /* Base */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_idiomas.swift; sourceTree = "<group>"; };
 		FBC7EBE22CDE6E42001AB201 /* Final_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC7EBE72CDE6E42001AB201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				FBC7EC1C2CDE7294001AB201 /* controlador_paises.swift */,
 				FBC7EC1E2CDE72A9001AB201 /* controlador_regiones.swift */,
 				FBC7EC202CDE7A19001AB201 /* CountryDetailViewController.swift */,
+				FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */,
 			);
 			path = controlador_pantallas;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				FBC7EC1F2CDE72A9001AB201 /* controlador_regiones.swift in Sources */,
 				FBC7EC1D2CDE7294001AB201 /* controlador_paises.swift in Sources */,
 				FBC7EBE62CDE6E42001AB201 /* AppDelegate.swift in Sources */,
+				FBBDDAB22CE519FD002838AB /* controlador_idiomas.swift in Sources */,
 				FBC7EC212CDE7A19001AB201 /* CountryDetailViewController.swift in Sources */,
 				FBC7EC232CDE7EBE001AB201 /* TableViewController.swift in Sources */,
 				FBC7EBE82CDE6E42001AB201 /* SceneDelegate.swift in Sources */,

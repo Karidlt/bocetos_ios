@@ -9,11 +9,12 @@ import Foundation
 struct  Pais: Codable {
     let name: Name
     let capital: [String]?
-    let languages: [String]
-    let currencies: [Currencies]
+    let languages: [String: String]?
+    let currencies: [String: Currencies]?
     let population: Int
     let region: String
     let flags: Flags
+    let continent: String?
     
     struct Name: Codable {
         let common: String
