@@ -18,6 +18,7 @@ class CountryDetailViewController: UIViewController {
     @IBOutlet weak var idioma_pais: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
     
+    @IBOutlet weak var populationL: UILabel!
     
     
     @IBOutlet weak var flag: UIImageView!
@@ -42,9 +43,9 @@ class CountryDetailViewController: UIViewController {
         capitalLabel.translatesAutoresizingMaskIntoConstraints = false
  
         // Población del país
-        let populationLabel = UILabel()
-        capitalLabel.text = "Población: \(country.population)"
-        populationLabel.translatesAutoresizingMaskIntoConstraints = false
+        let  populationL = UILabel()
+        populationL.text = "Población: \(country.population)"
+        populationL.translatesAutoresizingMaskIntoConstraints = false
  
         // Bandera del país
         let flagImageView = UIImageView()
@@ -58,7 +59,7 @@ class CountryDetailViewController: UIViewController {
         flagImageView.contentMode = .scaleAspectFit
  
         // Agregar las vistas
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, capitalLabel, populationLabel, flagImageView])
+        let stackView = UIStackView(arrangedSubviews: [nameLabel, capitalLabel, populationL, flagImageView])
         stackView.axis = .vertical
         stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false

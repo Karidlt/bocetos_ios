@@ -4,45 +4,66 @@
 //
 //  Created by alumno on 13-11-24.
 //
-
 import Foundation
 import UIKit
-
  
-class Controlador_idiomas: UITableViewController {
-    let apiService = APIService()
-  //  var idiomas: [String] = []
-    var continente: [String] = []
-    //var paises : String = ""
- 
+class LanguagesViewController: UITableViewController {
+    
+    var languages: [String] = []
+    var seleccion_lenguaje: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Llamada a fetchRegions para obtener la lista de continentes/idiomas dinámicamente
-        apiService.fetchCountries{ [weak self] paises in
+        title = "Idiomas"
+        fetchLanguages()
+    }
+    
+    func fetchLanguages() {
+        APIService().fetchCountries { [weak self] countries in
             guard let self = self else { return }
-            DispatchQueue.main.async {
-                if let paises = paises {
-                    self.continente = Array(Set(paises.compactMap{$0.continent})).sorted()
+            
+            if let countries = countries {
+                var languageSet = Set<String>()
+                for country in countries {
+                    if let languages = country.languages {
+                        for language in languages.values {
+                            languageSet.insert(language)
+                        }
+                    }
+                }
+                self.languages = Array(languageSet).sorted()
+                DispatchQueue.main.async {
                     self.tableView.reloadData()
-                    print("aaaa")
                 }
             }
         }
     }
- 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return continente.count
+        return languages.count
     }
- 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = continente[indexPath.row]
+        cell.textLabel?.text = languages[indexPath.row]
         return cell
     }
- 
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedLanguage = continente[indexPath.row]
-        // Lógica para pasar al siguiente ViewController con la región seleccionada
+        let selectedLanguage = languages[indexPath.row]
+        seleccion_lenguaje = selectedLanguage
+        
+        print("\(selectedLanguage)")
+        let countriesVC = CountriesByLanguageViewController()
+        countriesVC.language = selectedLanguage
+        navigationController?.pushViewController(countriesVC, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let pantalla_paises = segue.destination as? CountriesByLanguageViewController
+        
+        print(seleccion_lenguaje)
+        pantalla_paises?.language = seleccion_lenguaje
     }
 }

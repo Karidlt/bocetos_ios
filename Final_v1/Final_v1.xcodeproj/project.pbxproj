@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBAFB00E2CE7AB9B0043B259 /* CountryByLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAFB00D2CE7AB9B0043B259 /* CountryByLanguageViewController.swift */; };
 		FBBDDAB22CE519FD002838AB /* controlador_idiomas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */; };
 		FBC7EBE62CDE6E42001AB201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */; };
 		FBC7EBE82CDE6E42001AB201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7EBE72CDE6E42001AB201 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBAFB00D2CE7AB9B0043B259 /* CountryByLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryByLanguageViewController.swift; sourceTree = "<group>"; };
 		FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_idiomas.swift; sourceTree = "<group>"; };
 		FBC7EBE22CDE6E42001AB201 /* Final_v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_v1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FBAFB00C2CE7AA460043B259 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FBC7EBD92CDE6E42001AB201 = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +120,10 @@
 		FBC7EBE42CDE6E42001AB201 /* Final_v1 */ = {
 			isa = PBXGroup;
 			children = (
+				FBAFB00C2CE7AA460043B259 /* Fonts */,
 				FBC7EC1A2CDE7252001AB201 /* controlador_pantallas */,
 				FBC7EC172CDE713B001AB201 /* provedor */,
 				FBC7EBE52CDE6E42001AB201 /* AppDelegate.swift */,
-				FBC7EC182CDE715B001AB201 /* provedor_api_paises.swift */,
 				FBC7EBE72CDE6E42001AB201 /* SceneDelegate.swift */,
 				FBC7EBEB2CDE6E42001AB201 /* Main.storyboard */,
 				FBC7EBEE2CDE6E43001AB201 /* Assets.xcassets */,
@@ -146,6 +155,7 @@
 		FBC7EC172CDE713B001AB201 /* provedor */ = {
 			isa = PBXGroup;
 			children = (
+				FBC7EC182CDE715B001AB201 /* provedor_api_paises.swift */,
 			);
 			path = provedor;
 			sourceTree = "<group>";
@@ -157,6 +167,7 @@
 				FBC7EC1E2CDE72A9001AB201 /* controlador_regiones.swift */,
 				FBC7EC202CDE7A19001AB201 /* CountryDetailViewController.swift */,
 				FBBDDAB12CE519FD002838AB /* controlador_idiomas.swift */,
+				FBAFB00D2CE7AB9B0043B259 /* CountryByLanguageViewController.swift */,
 			);
 			path = controlador_pantallas;
 			sourceTree = "<group>";
@@ -298,6 +309,7 @@
 				FBC7EC1D2CDE7294001AB201 /* controlador_paises.swift in Sources */,
 				FBC7EBE62CDE6E42001AB201 /* AppDelegate.swift in Sources */,
 				FBBDDAB22CE519FD002838AB /* controlador_idiomas.swift in Sources */,
+				FBAFB00E2CE7AB9B0043B259 /* CountryByLanguageViewController.swift in Sources */,
 				FBC7EC212CDE7A19001AB201 /* CountryDetailViewController.swift in Sources */,
 				FBC7EC232CDE7EBE001AB201 /* TableViewController.swift in Sources */,
 				FBC7EBE82CDE6E42001AB201 /* SceneDelegate.swift in Sources */,
