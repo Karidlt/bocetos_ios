@@ -15,18 +15,25 @@ class CountryDetailViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var moneda_pais: UILabel!
+    
+    @IBOutlet weak var simbolo_moneda: UILabel!
     @IBOutlet weak var idioma_pais: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
     
     @IBOutlet weak var populationL: UILabel!
     
+    @IBOutlet weak var continente_pais: UILabel!
     
-    @IBOutlet weak var flag: UIImageView!
+    @IBOutlet weak var region_pais: UILabel!
+    
+    
+    @IBOutlet weak var flag_pais: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = country?.countryName
-        setupViews()
+        //setupViews()
     }
  
     func setupViews() {

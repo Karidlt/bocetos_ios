@@ -15,9 +15,14 @@ class CountriesByLanguageViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         title = "Países que hablan \(language ?? "")"
         print("Estamos auqi \(language)")
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
         fetchCountriesByLanguage()
+        
     }
     
     func fetchCountriesByLanguage() {
@@ -54,5 +59,13 @@ class CountriesByLanguageViewController: UITableViewController {
         cell.textLabel?.text = countries[indexPath.row].name.common
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let selectedCountry = countries [indexPath.row]
+        let detailVC = CountryDetailViewController()
+    detailVC.country = selectedCountry
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
+    
 
 }

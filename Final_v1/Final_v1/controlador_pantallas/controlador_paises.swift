@@ -15,7 +15,11 @@ class Controlador_paises: UITableViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = region
+        title = " \(region ?? "")"
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        
         fetchCountries()
     }
  
@@ -41,4 +45,10 @@ class Controlador_paises: UITableViewController {
     detailVC.country = selectedCountry
             navigationController?.pushViewController(detailVC, animated: true)
         }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text =
+        paises[indexPath.row].name.common
+        return cell
+    }
     }
