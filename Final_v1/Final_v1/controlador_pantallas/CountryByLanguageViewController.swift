@@ -61,8 +61,9 @@ class CountriesByLanguageViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let selectedCountry = countries [indexPath.row]
-        let detailVC = CountryDetailViewController()
+        let selectedCountry = countries [indexPath.row]
+        let detailVC = navigationController?.storyboard?.instantiateViewController(identifier: "vbf") as! CountryDetailViewController
+        print(detailVC)
     detailVC.country = selectedCountry
             navigationController?.pushViewController(detailVC, animated: true)
         }

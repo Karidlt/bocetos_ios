@@ -18,10 +18,12 @@ class CountryDetailViewController: UIViewController {
     
     @IBOutlet weak var simbolo_moneda: UILabel!
     @IBOutlet weak var idioma_pais: UILabel!
-    @IBOutlet weak var capitalLabel: UILabel!
+    
+    
+    @IBOutlet weak var capital_pais: UILabel!
+
     
     @IBOutlet weak var populationL: UILabel!
-    
     @IBOutlet weak var continente_pais: UILabel!
     
     @IBOutlet weak var region_pais: UILabel!
@@ -31,9 +33,9 @@ class CountryDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        //view.backgroundColor = .white
         title = country?.countryName
-        //setupViews()
+       // setupViews()
     }
  
     func setupViews() {
@@ -41,17 +43,32 @@ class CountryDetailViewController: UIViewController {
  
         // Nombre del país
         let nameLabel = UILabel()
-        nameLabel.text = "Nombre: \(country.countryName)"
+        nameLabel.text = "Name: \(country.countryName)"
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
  
         // Capital del país
-        let capitalLabel = UILabel()
-        capitalLabel.text = "Capital: \(country.countryCapital)"
-        capitalLabel.translatesAutoresizingMaskIntoConstraints = false
+        let capital_pais = UILabel()
+        capital_pais.text = "Capital: \(country.countryCapital)"
+        capital_pais.translatesAutoresizingMaskIntoConstraints = false
  
+        // Moneda del país
+        let  moneda_pais = UILabel()
+        moneda_pais.text = "Currency: \(country.currencies)"
+        moneda_pais.translatesAutoresizingMaskIntoConstraints = false
+        
         // Población del país
         let  populationL = UILabel()
-        populationL.text = "Población: \(country.population)"
+        populationL.text = "Population: \(country.population)"
+        populationL.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Continente del país
+        let  contiennteL = UILabel()
+        populationL.text = "Continent: \(country.continent)"
+        populationL.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Region
+        let  regionL = UILabel()
+        populationL.text = "Region: \(country.region)"
         populationL.translatesAutoresizingMaskIntoConstraints = false
  
         // Bandera del país
@@ -66,7 +83,7 @@ class CountryDetailViewController: UIViewController {
         flagImageView.contentMode = .scaleAspectFit
  
         // Agregar las vistas
-        let stackView = UIStackView(arrangedSubviews: [nameLabel, capitalLabel, populationL, flagImageView])
+        let stackView = UIStackView(arrangedSubviews: [nameLabel, capital_pais, populationL, moneda_pais, contiennteL, regionL, flagImageView])
         stackView.axis = .vertical
         stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false

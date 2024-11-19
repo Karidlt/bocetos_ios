@@ -167,14 +167,17 @@
         <!--Country Detail View Controller-->
         <scene sceneID="OM3-WH-J0Z">
             <objects>
-                <viewController id="SPs-QS-JM0" customClass="CountryDetailViewController" customModule="Final_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vbf" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SPs-QS-JM0" customClass="CountryDetailViewController" customModule="Final_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WYR-EW-VaF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="us2-kF-oG8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="us2-kF-oG8">
                                 <rect key="frame" x="86" y="545" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8zN-mc-isL"/>
+                                    <constraint firstAttribute="width" constant="240" id="T9t-BK-rpn"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBv-et-hXu">
                                 <rect key="frame" x="136" y="192" width="51" height="21"/>
@@ -267,9 +270,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-XB-zXs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aL-XB-zXs">
                                 <rect key="frame" x="180" y="127" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -277,23 +279,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7f5-HO-Rff"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="us2-kF-oG8" firstAttribute="leading" secondItem="7f5-HO-Rff" secondAttribute="leading" constant="86" id="3lO-uR-Zf3"/>
+                            <constraint firstItem="5aL-XB-zXs" firstAttribute="top" secondItem="7f5-HO-Rff" secondAttribute="top" constant="24" id="6va-tu-7bH"/>
+                            <constraint firstItem="7f5-HO-Rff" firstAttribute="bottom" secondItem="us2-kF-oG8" secondAttribute="bottom" constant="145" id="j5W-cj-IeJ"/>
+                            <constraint firstItem="7f5-HO-Rff" firstAttribute="trailing" secondItem="us2-kF-oG8" secondAttribute="trailing" constant="67" id="rX6-Dh-7Gb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bkJ-mx-hCj"/>
                     <connections>
-                        <outlet property="capital_pais" destination="EBv-et-hXu" id="wMx-Jh-RPL"/>
+                        <outlet property="capital_pais" destination="EBv-et-hXu" id="cF4-lo-8Jr"/>
                         <outlet property="continente_pais" destination="34b-zq-PCn" id="M32-w4-bJz"/>
                         <outlet property="flag_pais" destination="us2-kF-oG8" id="6eb-Sn-6aK"/>
-                        <outlet property="idioma_pais" destination="cEK-G3-6yT" id="GG3-XZ-Qjv"/>
                         <outlet property="moneda_pais" destination="Iyi-Ii-CBX" id="0oS-m3-Okt"/>
                         <outlet property="nameLabel" destination="5aL-XB-zXs" id="7Qe-zR-mST"/>
-                        <outlet property="populationL" destination="KiZ-ei-AY4" id="RdQ-Be-ihe"/>
+                        <outlet property="populationL" destination="KiZ-ei-AY4" id="wih-Wb-XNl"/>
                         <outlet property="region_pais" destination="34b-zq-PCn" id="hhO-qv-zic"/>
-                        <outlet property="simbolo_moneda" destination="cEK-G3-6yT" id="yya-Kb-zwP"/>
+                        <outlet property="simbolo_moneda" destination="cEK-G3-6yT" id="Nmw-8Q-rCi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYu-Ni-86S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2895" y="363"/>
+            <point key="canvasLocation" x="2893.8931297709923" y="362.67605633802816"/>
         </scene>
         <!--Controlador paises-->
         <scene sceneID="T52-HX-Usa">
